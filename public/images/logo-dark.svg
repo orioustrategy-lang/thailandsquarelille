@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 160">
+  <!-- Chopsticks forming the A -->
+  <g fill="#D4A574">
+    <!-- Left chopstick -->
+    <polygon points="78,8 82,8 95,75 91,75"/>
+    <!-- Right chopstick -->
+    <polygon points="102,8 98,8 85,75 89,75"/>
+  </g>
+  
+  <!-- THAI text -->
+  <text x="90" y="90" font-family="Arial Black, Impact, sans-serif" font-size="26" font-weight="900" fill="#1A1A1A" text-anchor="middle" letter-spacing="3">
+    <tspan>TH</tspan>
+    <tspan dx="18">Ï</tspan>
+  </text>
+  
+  <!-- LAND text -->
+  <text x="90" y="118" font-family="Arial Black, Impact, sans-serif" font-size="26" font-weight="900" fill="#1A1A1A" text-anchor="middle" letter-spacing="2">LAND</text>
+  
+  <!-- SQUARE text (brush stroke style) -->
+  <text x="90" y="148" font-family="Brush Script MT, Georgia, serif" font-size="28" font-weight="700" fill="#D4A574" text-anchor="middle" font-style="italic">SQUARE</text>
+</svg>
