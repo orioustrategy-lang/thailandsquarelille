@@ -50,7 +50,7 @@ export default function Concept() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="relative pt-32 pb-24 overflow-hidden">
+        <section className="relative pt-24 sm:pt-32 pb-16 sm:pb-24 overflow-hidden">
           <div className="absolute inset-0">
             <img
               src="/images/concept-hero.jpg"
@@ -61,14 +61,14 @@ export default function Concept() {
           </div>
           
           <div className="relative z-10 container mx-auto px-4 text-center text-white">
-            <span className="text-thai-gold font-semibold text-sm tracking-wider uppercase mb-4 block">
+            <span className="text-thai-gold font-semibold text-xs sm:text-sm tracking-wider uppercase mb-3 sm:mb-4 block">
               Notre Histoire
             </span>
-            <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+            <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6">
               L'Art de la Cuisine<br />
               <span className="text-gradient">Thaïlandaise</span>
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-white/90 max-w-3xl mx-auto px-2">
               Découvrez l'histoire de Thai Land Square et notre passion 
               pour la cuisine authentique de la Thaïlande.
             </p>
@@ -76,25 +76,25 @@ export default function Concept() {
         </section>
 
         {/* Story Section */}
-        <section className="py-20 bg-white">
+        <section className="py-12 sm:py-20 bg-white">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 sm:gap-16 items-center">
               <div>
-                <span className="text-thai-gold font-semibold text-sm tracking-wider uppercase mb-4 block">
+                <span className="text-thai-gold font-semibold text-xs sm:text-sm tracking-wider uppercase mb-3 sm:mb-4 block">
                   Notre Voyage
                 </span>
-                <h2 className="section-title mb-6">
+                <h2 className="section-title text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-6">
                   De Bangkok à<br />
                   <span className="text-gradient">Lille</span>
                 </h2>
                 
-                <div className="space-y-6 text-gray-600">
-                  <p className="text-lg leading-relaxed">
+                <div className="space-y-4 sm:space-y-6 text-gray-600">
+                  <p className="text-base sm:text-lg leading-relaxed">
                     Thai Land Square est né d'une passion profonde pour la cuisine thaïlandaise 
                     et d'un rêve : faire découvrir aux Lillois les saveurs authentiques 
                     des marchés de Bangkok.
                   </p>
-                  <p className="leading-relaxed">
+                  <p className="text-sm sm:text-base leading-relaxed">
                     Notre aventure a commencé avec un premier restaurant à Lille Fives, 
                     où nous avons voulu recréer l'ambiance chaleureuse des échoppes de rue 
                     thaïlandaises. Le wok qui crépite, les arômes d'épices qui embaument 

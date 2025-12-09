@@ -217,13 +217,13 @@ export default function Product() {
         )}
       />
       <Header />
-      <main className="pt-20">
+      <main className="pt-16 sm:pt-20">
         {/* Breadcrumb */}
         <div className="bg-white border-b">
-          <div className="container mx-auto px-4 py-3">
+          <div className="container mx-auto px-4 py-2.5 sm:py-3">
             <Link 
               to="/menu" 
-              className="inline-flex items-center gap-2 text-slate-600 hover:text-amber-600 transition-colors"
+              className="inline-flex items-center gap-2 text-slate-600 hover:text-amber-600 transition-colors text-sm sm:text-base"
             >
               <ArrowLeft className="w-4 h-4" />
               Retour au menu
@@ -231,12 +231,12 @@ export default function Product() {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-8">
-          <div className="grid lg:grid-cols-2 gap-12">
+        <div className="container mx-auto px-4 py-4 sm:py-8">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-12">
             {/* Product Image */}
             <div className="relative">
-              <div className="sticky top-24">
-                <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
+              <div className="lg:sticky lg:top-24">
+                <div className="aspect-square rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl">
                   <img
                     src={product.image}
                     alt={product.name}
@@ -245,24 +245,24 @@ export default function Product() {
                 </div>
                 
                 {/* Badges */}
-                <div className="absolute top-4 left-4 flex flex-col gap-2">
+                <div className="absolute top-3 sm:top-4 left-3 sm:left-4 flex flex-col gap-2">
                   {product.isVegetarian && (
-                    <span className="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
-                      <Leaf className="w-3 h-3" /> Végétarien
+                    <span className="bg-green-500 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1 rounded-full flex items-center gap-1">
+                      <Leaf className="w-2.5 sm:w-3 h-2.5 sm:h-3" /> Végétarien
                     </span>
                   )}
                   {product.isGlutenFree && (
-                    <span className="bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="bg-blue-500 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1 rounded-full">
                       Sans gluten
                     </span>
                   )}
                 </div>
 
                 {/* Rating badge */}
-                <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm rounded-full px-3 py-2 shadow-lg flex items-center gap-1">
-                  <Star className="w-4 h-4 text-amber-400 fill-current" />
-                  <span className="font-bold text-slate-800">{product.rating}</span>
-                  <span className="text-slate-400 text-sm">({product.reviewCount})</span>
+                <div className="absolute top-3 sm:top-4 right-3 sm:right-4 bg-white/95 backdrop-blur-sm rounded-full px-2 sm:px-3 py-1.5 sm:py-2 shadow-lg flex items-center gap-1">
+                  <Star className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-amber-400 fill-current" />
+                  <span className="font-bold text-slate-800 text-sm sm:text-base">{product.rating}</span>
+                  <span className="text-slate-400 text-xs sm:text-sm">({product.reviewCount})</span>
                 </div>
               </div>
             </div>
@@ -270,13 +270,13 @@ export default function Product() {
             {/* Product Details */}
             <div>
               {/* Title & Price */}
-              <div className="mb-6">
-                <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-2">
+              <div className="mb-4 sm:mb-6">
+                <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-2">
                   {product.name}
                 </h1>
-                <div className="flex items-center gap-4 text-slate-600 mb-4">
+                <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-slate-600 mb-3 sm:mb-4 text-sm sm:text-base">
                   <span className="flex items-center gap-1">
-                    <Clock className="w-4 h-4" />
+                    <Clock className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
                     {product.prepTime}
                   </span>
                   <span>{product.calories}</span>
@@ -284,27 +284,27 @@ export default function Product() {
                     {[...Array(5)].map((_, i) => (
                       <Flame 
                         key={i} 
-                        className={`w-4 h-4 ${i < product.spicyLevel ? 'text-red-500' : 'text-slate-200'}`} 
+                        className={`w-3.5 sm:w-4 h-3.5 sm:h-4 ${i < product.spicyLevel ? 'text-red-500' : 'text-slate-200'}`} 
                       />
                     ))}
                   </span>
                 </div>
-                <p className="text-lg text-slate-600 leading-relaxed">
+                <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
                   {product.description}
                 </p>
               </div>
 
               {/* Price */}
-              <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 mb-6">
+              <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 mb-4 sm:mb-6">
                 <div className="flex items-end gap-2 mb-2">
-                  <span className="text-4xl font-black text-slate-900">{product.price.toFixed(2)} €</span>
+                  <span className="text-2xl sm:text-4xl font-black text-slate-900">{product.price.toFixed(2)} €</span>
                 </div>
               </div>
 
               {/* Options */}
               {product.options.map((option) => (
-                <div key={option.name} className="mb-6">
-                  <h3 className="font-bold text-slate-900 mb-3">{option.name}</h3>
+                <div key={option.name} className="mb-4 sm:mb-6">
+                  <h3 className="font-bold text-slate-900 mb-2 sm:mb-3 text-sm sm:text-base">{option.name}</h3>
                   <div className="flex flex-wrap gap-2">
                     {option.choices.map((choice, index) => (
                       <button

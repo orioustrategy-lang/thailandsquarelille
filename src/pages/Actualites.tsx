@@ -218,41 +218,41 @@ export default function Actualites() {
               >
                 <div className="bg-white rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-1">
                   <div className="grid md:grid-cols-2 gap-0">
-                    <div className="h-64 md:h-80 overflow-hidden">
+                    <div className="h-48 sm:h-64 md:h-80 overflow-hidden">
                       <img 
                         src={featuredArticle.image} 
                         alt={featuredArticle.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       />
                     </div>
-                    <div className="p-8 md:p-10 flex flex-col justify-center bg-white">
-                      <div className="flex items-center gap-3 mb-4">
-                        <span className="bg-slate-900 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <div className="p-5 sm:p-8 md:p-10 flex flex-col justify-center bg-white">
+                      <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+                        <span className="bg-slate-900 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1 rounded-full">
                           À LA UNE
                         </span>
-                        <span className="bg-slate-100 text-slate-600 text-xs font-medium px-3 py-1 rounded-full">
+                        <span className="bg-slate-100 text-slate-600 text-[10px] sm:text-xs font-medium px-2 sm:px-3 py-1 rounded-full">
                           {featuredArticle.category}
                         </span>
                       </div>
-                      <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4 group-hover:text-slate-700 transition-colors">
+                      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-3 sm:mb-4 group-hover:text-slate-700 transition-colors">
                         {featuredArticle.title}
                       </h2>
-                      <p className="text-slate-500 mb-6 line-clamp-3">
+                      <p className="text-slate-500 mb-4 sm:mb-6 line-clamp-2 sm:line-clamp-3 text-sm sm:text-base">
                         {featuredArticle.excerpt}
                       </p>
-                      <div className="flex items-center gap-4 text-sm text-slate-400">
+                      <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm text-slate-400">
                         <span className="flex items-center gap-1.5">
-                          <Calendar className="w-4 h-4" />
+                          <Calendar className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
                           {new Date(featuredArticle.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}
                         </span>
                         <span className="flex items-center gap-1.5">
-                          <Clock className="w-4 h-4" />
+                          <Clock className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
                           {featuredArticle.readTime}
                         </span>
                       </div>
-                      <div className="mt-6 flex items-center gap-2 text-slate-900 font-semibold group-hover:gap-4 transition-all">
+                      <div className="mt-4 sm:mt-6 flex items-center gap-2 text-slate-900 font-semibold group-hover:gap-4 transition-all text-sm sm:text-base">
                         Lire l'article
-                        <ArrowRight className="w-5 h-5" />
+                        <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5" />
                       </div>
                     </div>
                   </div>

@@ -109,7 +109,7 @@ export default function Contact() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="relative pt-32 pb-20 bg-thai-dark overflow-hidden">
+        <section className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 bg-thai-dark overflow-hidden">
           <div className="absolute inset-0 opacity-30">
             <img
               src="/images/locations-hero.jpg"
@@ -120,13 +120,13 @@ export default function Contact() {
           <div className="absolute inset-0 bg-gradient-to-b from-thai-dark/80 to-thai-dark" />
           
           <div className="relative z-10 container mx-auto px-4 text-center text-white">
-            <span className="text-thai-gold font-semibold text-sm tracking-wider uppercase mb-4 block">
+            <span className="text-thai-gold font-semibold text-xs sm:text-sm tracking-wider uppercase mb-3 sm:mb-4 block">
               Nos Adresses
             </span>
-            <h1 className="font-heading text-5xl md:text-6xl font-bold mb-4">
+            <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">
               Nos Restaurants
             </h1>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-white/80 max-w-2xl mx-auto px-2">
               Retrouvez Thai Land Square dans 5 adresses à Lille 
               et dans la métropole lilloise.
             </p>
@@ -135,18 +135,18 @@ export default function Contact() {
 
         {/* Featured Location - Lille Fives */}
         {featuredLocation && (
-          <section className="py-16 bg-white">
+          <section className="py-10 sm:py-16 bg-white">
             <div className="container mx-auto px-4">
-              <div className="text-center mb-12">
-                <span className="inline-flex items-center gap-2 bg-thai-gold/10 text-thai-gold px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                  <Star className="w-4 h-4" />
+              <div className="text-center mb-8 sm:mb-12">
+                <span className="inline-flex items-center gap-2 bg-thai-gold/10 text-thai-gold px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold mb-4">
+                  <Star className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
                   Restaurant Principal - Lille Fives
                 </span>
               </div>
 
-              <div className="bg-thai-cream rounded-3xl overflow-hidden shadow-2xl">
+              <div className="bg-thai-cream rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
                 <div className="grid lg:grid-cols-2">
-                  <div className="relative min-h-[400px]">
+                  <div className="relative min-h-[250px] sm:min-h-[400px]">
                     <img
                       src={featuredLocation.image}
                       alt={`Thai Land Square ${featuredLocation.name}`}
