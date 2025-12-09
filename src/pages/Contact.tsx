@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { MapPin, Phone, Clock, ExternalLink, Mail, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -98,6 +99,13 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Contact | Thai Land Square - Contactez-nous à Lille"
+        description="Contactez Thai Land Square. Réservations, commandes et informations. Téléphone : +33 7 77 71 46 04. 5 restaurants à Lille et sa métropole."
+        keywords="contact thai land square, réservation restaurant thai lille, téléphone restaurant thai, commander thai lille, adresse thai land square"
+        canonicalUrl="https://thailandsquarelille.com/contact"
+        ogImage="/images/locations-hero.jpg"
+      />
       <Header />
       <main>
         {/* Hero */}

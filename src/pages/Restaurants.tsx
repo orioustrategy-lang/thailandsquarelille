@@ -5,6 +5,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 // Fix for default marker icons in Leaflet with Vite
 const defaultIcon = L.icon({
@@ -131,6 +132,13 @@ export default function Restaurants() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Nos Restaurants | Thai Land Square - 5 Adresses à Lille"
+        description="Trouvez le Thai Land Square le plus proche. 5 restaurants à Lille : Fives, Wazemmes, Vieux-Lille, Centre et Villeneuve d'Ascq. Horaires, adresses et itinéraires."
+        keywords="restaurant thai lille fives, restaurant thai wazemmes, restaurant thai vieux lille, restaurant thai villeneuve ascq, thai land square adresse, restaurant thailandais proche de moi"
+        canonicalUrl="https://thailandsquarelille.com/restaurants"
+        ogImage="/images/locations-hero.jpg"
+      />
       <Header />
       
       <main className="flex-1 flex flex-col lg:flex-row pt-[120px]">

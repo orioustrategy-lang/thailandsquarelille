@@ -3,6 +3,7 @@ import { Calendar, Clock, ArrowRight, ChevronLeft, ChevronRight, MessageCircle }
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const WHATSAPP_NUMBER = "33777714604";
 const WHATSAPP_MESSAGE = "Bonjour, je souhaite passer une commande chez Thai Land Square !";
@@ -177,6 +178,13 @@ export default function Actualites() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      <SEO
+        title="Actualités | Thai Land Square - Nouveautés et Événements"
+        description="Suivez toute l'actualité de Thai Land Square : nouveaux plats, ouvertures de restaurants, événements et promotions. Restez informés des dernières nouvelles de vos restaurants thaïlandais préférés à Lille."
+        keywords="actualités thai land square, news restaurant thai lille, nouveaux plats thai, événements restaurant thailandais, promotions thai lille"
+        canonicalUrl="https://thailandsquarelille.com/actualites"
+        ogImage="/images/restaurant/interior-1.jpg"
+      />
       <Header />
       
       <main className="flex-1 pt-24">

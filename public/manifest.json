@@ -1,0 +1,89 @@
+{
+  "name": "Thai Land Square - Restaurant Thaïlandais Lille",
+  "short_name": "Thai Land Square",
+  "description": "Découvrez Thai Land Square, le meilleur restaurant thaïlandais de Lille. Cuisine authentique : Pad Thai, Curry, Tom Yum, Wok.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e293b",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "fr-FR",
+  "categories": ["food", "restaurant", "lifestyle"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/hero-bg.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Thai Land Square Homepage"
+    },
+    {
+      "src": "/images/menu-hero.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Notre Menu"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Commander",
+      "short_name": "Commander",
+      "description": "Commander via WhatsApp",
+      "url": "https://wa.me/33777714604?text=Bonjour, je souhaite passer une commande",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Voir le Menu",
+      "short_name": "Menu",
+      "description": "Découvrir notre carte",
+      "url": "/menu",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Nos Restaurants",
+      "short_name": "Restaurants",
+      "description": "Trouver un restaurant",
+      "url": "/restaurants",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

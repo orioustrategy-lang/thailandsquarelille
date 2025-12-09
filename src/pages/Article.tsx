@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { Calendar, Clock, ArrowLeft, Share2, Facebook, Twitter, Linkedin, ChevronRight, Heart, MessageCircle, Bookmark, User } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO, { generateArticleSchema } from "@/components/SEO";
 
 const articles = [
   {
@@ -281,6 +282,22 @@ export default function Article() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      <SEO
+        title={`${article.title} | Thai Land Square Lille`}
+        description={article.excerpt}
+        keywords={`${article.category.toLowerCase()}, thai land square, restaurant thai lille, ${article.title.toLowerCase().split(' ').slice(0, 5).join(', ')}`}
+        canonicalUrl={`https://thailandsquarelille.com/article/${article.id}`}
+        ogImage={article.image}
+        ogType="article"
+        structuredData={generateArticleSchema(
+          article.title,
+          article.excerpt,
+          `https://thailandsquarelille.com${article.image}`,
+          article.date,
+          article.date,
+          "Thai Land Square"
+        )}
+      />
       <Header />
       
       <main className="flex-1 pt-20">

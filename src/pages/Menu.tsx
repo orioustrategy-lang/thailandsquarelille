@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { useState } from "react";
 import { Flame, Leaf, Star } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -345,6 +346,13 @@ export default function Menu() {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Menu | Thai Land Square - Restaurant Thaïlandais Lille"
+        description="Découvrez notre carte : Pad Thai, Curry Vert, Tom Yum, Wok, Nouilles sautées et plus encore. Plats authentiques thaïlandais préparés avec des ingrédients frais. Commandez en ligne !"
+        keywords="menu thai lille, carte restaurant thailandais, pad thai lille, curry vert lille, tom yum lille, wok lille, nouilles sautées lille, plats thai à emporter"
+        canonicalUrl="https://thailandsquarelille.com/menu"
+        ogImage="/images/menu-hero.jpg"
+      />
       <Header />
       <main>
         {/* Hero */}

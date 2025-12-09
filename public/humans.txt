@@ -1,0 +1,20 @@
+# Humans.txt - Thai Land Square
+# https://thailandsquarelille.com
+
+/* TEAM */
+Restaurant: Thai Land Square
+Site: https://thailandsquarelille.com
+Location: Lille, France
+Contact: +33 7 77 71 46 04
+
+/* THANKS */
+Design & Development: Orious Strategy
+Site: https://oriousstrategy.com
+
+/* SITE */
+Last update: 2025/12/09
+Language: French
+Doctype: HTML5
+Framework: React + Vite
+Styling: Tailwind CSS
+Fonts: Inter, Playfair Display

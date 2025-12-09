@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { ChefHat, Flame, Heart, Leaf, Award, Users } from "lucide-react";
 
@@ -39,6 +40,13 @@ const values = [
 export default function Concept() {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Notre Concept | Thai Land Square - Cuisine Thaïlandaise Authentique"
+        description="Découvrez l'histoire de Thai Land Square. Une passion pour la cuisine thaïlandaise authentique, des recettes traditionnelles et des ingrédients frais importés de Thaïlande."
+        keywords="concept thai land square, histoire restaurant thai lille, cuisine thailandaise authentique, chef thai lille, recettes traditionnelles thailandaises"
+        canonicalUrl="https://thailandsquarelille.com/concept"
+        ogImage="/images/concept-hero.jpg"
+      />
       <Header />
       <main>
         {/* Hero */}

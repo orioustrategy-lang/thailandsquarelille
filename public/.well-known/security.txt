@@ -1,0 +1,6 @@
+# Thai Land Square - Security Policy
+
+## Security.txt
+Contact: mailto:contact@thailandsquarelille.com
+Preferred-Languages: fr, en
+Canonical: https://thailandsquarelille.com/.well-known/security.txt

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage - Highest priority -->
+  <url>
+    <loc>https://thailandsquarelille.com/</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://thailandsquarelille.com/images/hero-bg.jpg</image:loc>
+      <image:title>Thai Land Square - Restaurant Thaïlandais à Lille</image:title>
+      <image:caption>Vue du restaurant Thai Land Square</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thailandsquarelille.com/images/logo.jpg</image:loc>
+      <image:title>Logo Thai Land Square</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Menu Page - Very important for customers -->
+  <url>
+    <loc>https://thailandsquarelille.com/menu</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://thailandsquarelille.com/images/menu-hero.jpg</image:loc>
+      <image:title>Menu Thai Land Square</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thailandsquarelille.com/images/dishes/pad-thai.jpg</image:loc>
+      <image:title>Pad Thai - Spécialité thaïlandaise</image:title>
+      <image:caption>Délicieux Pad Thai aux crevettes</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thailandsquarelille.com/images/dishes/curry-vert.jpg</image:loc>
+      <image:title>Curry Vert Thaï</image:title>
+      <image:caption>Curry vert au poulet et légumes frais</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thailandsquarelille.com/images/dishes/tom-yum.jpg</image:loc>
+      <image:title>Tom Yum - Soupe thaïlandaise</image:title>
+      <image:caption>Soupe Tom Yum épicée aux crevettes</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Restaurants / Locations Page -->
+  <url>
+    <loc>https://thailandsquarelille.com/restaurants</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://thailandsquarelille.com/images/locations/lille-fives.jpg</image:loc>
+      <image:title>Thai Land Square Lille Fives</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thailandsquarelille.com/images/locations/wazemmes.jpg</image:loc>
+      <image:title>Thai Land Square Wazemmes</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thailandsquarelille.com/images/locations/vieux-lille.jpg</image:loc>
+      <image:title>Thai Land Square Vieux-Lille</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Concept Page -->
+  <url>
+    <loc>https://thailandsquarelille.com/concept</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://thailandsquarelille.com/images/concept-hero.jpg</image:loc>
+      <image:title>Notre Concept - Cuisine Thaïlandaise Authentique</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thailandsquarelille.com/images/concept/kitchen-1.jpg</image:loc>
+      <image:title>Notre cuisine ouverte</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Contact Page -->
+  <url>
+    <loc>https://thailandsquarelille.com/contact</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Actualités / Blog Page -->
+  <url>
+    <loc>https://thailandsquarelille.com/actualites</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Fidélité Page -->
+  <url>
+    <loc>https://thailandsquarelille.com/fidelite</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>

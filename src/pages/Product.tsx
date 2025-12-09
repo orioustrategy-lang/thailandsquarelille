@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO, { generateMenuItemSchema } from "@/components/SEO";
 import { 
   ArrowLeft, 
   Clock, 
@@ -202,6 +203,19 @@ export default function Product() {
 
   return (
     <div className="min-h-screen bg-slate-50">
+      <SEO
+        title={`${product.name} | Menu Thai Land Square Lille`}
+        description={product.description}
+        keywords={`${product.name.toLowerCase()}, plat thai lille, cuisine thailandaise, ${product.isVegetarian ? 'plat végétarien thai, ' : ''}commander thai lille`}
+        canonicalUrl={`https://thailandsquarelille.com/product/${product.id}`}
+        ogImage={product.image}
+        structuredData={generateMenuItemSchema(
+          product.name,
+          product.description,
+          product.price,
+          `https://thailandsquarelille.com${product.image}`
+        )}
+      />
       <Header />
       <main className="pt-20">
         {/* Breadcrumb */}

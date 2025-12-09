@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Gift, Bell, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
@@ -14,6 +15,13 @@ export default function Fidelite() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <SEO
+        title="Programme Fidélité | Thai Land Square - Gagnez des Récompenses"
+        description="Rejoignez le programme de fidélité Thai Land Square et gagnez des points à chaque commande. Plats gratuits, offres exclusives et surprises vous attendent. Inscription gratuite !"
+        keywords="fidélité thai land square, programme récompenses restaurant, points fidélité lille, offres exclusives restaurant thai, carte fidélité thai"
+        canonicalUrl="https://thailandsquarelille.com/fidelite"
+        ogImage="/images/hero-bg.jpg"
+      />
       <Header />
       <main className="pt-16">
         <section className="min-h-[calc(100vh-64px)] flex items-center justify-center px-4">
